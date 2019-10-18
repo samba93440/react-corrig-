@@ -28,12 +28,15 @@ class Main extends Component {
     return (
       <div className="col-sm-12 text-center">
         <h1>Titre principal</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-          reiciendis tempora quo voluptatem asperiores necessitatibus voluptatum
-          mollitia voluptas. Quos provident maiores iure, eius nostrum earum
-          esse perferendis nulla eos. Incidunt.
-        </p>
+        <div className="row">
+          <p className="col-sm-8 offset-md-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            reiciendis tempora quo voluptatem asperiores necessitatibus
+            voluptatum mollitia voluptas. Quos provident maiores iure, eius
+            nostrum earum esse perferendis nulla eos. Incidunt.
+          </p>
+        </div>
+
         <section style={this.style}>
           {this.state.offres.map(offre => (
             <Prix
